@@ -3,7 +3,7 @@
 
 // Update these with values suitable for your network.
 
-const char* ssid = "Hashem_EXT";
+const char* ssid = "HUAWEI-4gNy";
 const char* password = "csffb76673";
 const char* mqtt_server = "broker.emqx.io";
 const int mqtt_port = 1883;
@@ -40,6 +40,7 @@ void setup_wifi() {
   Serial.println("WiFi connected");
   Serial.println("IP address: ");
   Serial.println(WiFi.localIP());
+  digitalWrite(D2,  1);
 }
 
 void callback(char* topic, byte* payload, unsigned int length) {
